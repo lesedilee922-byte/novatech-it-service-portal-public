@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit a Ticket | NovaTech</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/google-form-config.js" defer></script>
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header class="site-header">
+  <a class="brand" href="index.html"><span class="brand-mark">N</span><span>NovaTech <small>IT SERVICE PORTAL</small></span></a>
+  <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav class="nav"><a href="index.html">Home</a><a class="active" href="submit-ticket.html">Submit a Ticket</a><a href="knowledge-base.html">Knowledge Base</a><a href="team.html">Team</a><a href="dashboard.html">Dashboard</a></nav>
+</header>
+<main>
+  <section class="page-hero">
+    <p class="eyebrow">IT SERVICE DESK</p>
+    <h1>Submit a Ticket</h1>
+    <p>Use the connected Google Form to log an incident, service request, or change request with the NovaTech support team.</p>
+  </section>
+  <section class="content-layout">
+    <div class="form-card">
+      <h2>NovaTech IT Support Request</h2>
+      <p class="muted">Complete the required fields and submit one request per issue. Do not enter passwords or confidential information in the form.</p>
+      <div id="google-form-setup-note" class="notice" role="status">
+        <strong>Google Form connection not set up yet.</strong><br>
+        Create and publish your required Google Form, copy its responder and embed links, then paste them into <code>js/google-form-config.js</code>. The form will appear here after you save the file and refresh this page.
+        <p><a href="https://forms.google.com" target="_blank" rel="noopener">Open Google Forms to create the ticket form ↗</a></p>
+      </div>
+      <div id="google-form-connected" hidden>
+        <iframe id="google-form-frame" title="NovaTech IT Support Request Google Form" loading="lazy" width="100%" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <p class="form-note">If the form does not display correctly, use the direct form link below.</p>
+        <a id="google-form-open-link" class="button button-primary" href="#" target="_blank" rel="noopener">Open ticket form in a new tab</a>
+      </div>
+      <p class="form-note">After setup, responses will be recorded in the Google Sheet linked to the form. The optional Apps Script automation in this project can generate ticket IDs and send email acknowledgements.</p>
+    </div>
+    <aside class="side-card">
+      <div class="card-icon blue">i</div>
+      <h3>Before you submit</h3>
+      <ul class="check-list">
+        <li>Log one main issue per ticket.</li>
+        <li>Include the affected device or Asset ID where known.</li>
+        <li>Describe impact, urgency, and any error message.</li>
+        <li>Do not include passwords or sensitive personal data.</li>
+      </ul>
+      <hr>
+      <h3>Support-level response targets</h3>
+      <div class="sla-row"><span>Level 1</span><b>Within 2 hours</b></div>
+      <div class="sla-row"><span>Level 2</span><b>Within 24 hours</b></div>
+      <div class="sla-row"><span>Level 3</span><b>Within 48 hours*</b></div>
+      <p class="tiny muted">These are response-time targets from the Task 1 SOP, not guaranteed resolution times. Level 3 may take longer for highly complex cases. The support team assigns priority after assessing impact and urgency.</p>
+      <hr>
+      <h3>How tickets are handled</h3>
+      <p class="tiny muted">The support team logs and triages the request, assigns priority P1–P4, attempts Level 1 resolution, escalates if required, communicates progress, and closes the ticket after resolution confirmation.</p>
+    </aside>
+  </section>
+</main>
+<footer class="site-footer"><div class="brand brand-footer"><span class="brand-mark">N</span><span>NovaTech <small>IT SERVICE PORTAL</small></span></div><p>Student project demonstration · Use simulated data only</p><p>© NovaTech Project Portal</p></footer>
+<div class="help-widget"><button class="help-fab" aria-expanded="false" aria-controls="help-panel">? <span>Quick Help</span></button><section class="help-panel" id="help-panel" hidden><div class="help-panel-head"><b>Quick Help</b><button class="help-close" aria-label="Close Quick Help">×</button></div><p>Select an issue to see first steps.</p><div class="help-options"><button data-help-topic="wifi">Wi-Fi problem</button><button data-help-topic="printer">Printer problem</button><button data-help-topic="slow">Slow computer</button></div><p class="help-answer" id="help-answer">Your suggested steps will appear here.</p><a class="button button-primary button-full" href="submit-ticket.html">Submit a ticket</a></section></div>
+</body>
+</html>
