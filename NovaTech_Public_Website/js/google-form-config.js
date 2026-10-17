@@ -6,6 +6,5 @@
 //    The embed URL normally ends with /viewform?embedded=true
 // 3. Save the file and refresh submit-ticket.html in your browser.
 window.NOVATECH_GOOGLE_FORM = {
-  responderUrl: "https://forms.gle/kEsug62YXFfsRJop8",
-  embedUrl: "<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeqjAspn-CAh6UlUeXhnSr4Zx3KTv26BjAShtnWSl4OtVNHTg/viewform?embedded=true" width="640" height="3085" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>"
-};
+  responderUrl: "https://docs.google.com/forms/d/e/1FAIpQLSeqjAspn-CAh6UlUeXhnSr4Zx3KTv26BjAShtnWSl4OtVNHTg/viewform?usp=dialog",
+  embedUrl: "<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeqjAspn-CAh6UlUeXhnSr4Zx3KTv26BjAShtnWSl4OtVNHTg/viewform?embedded=true" width="640" height="3085" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>" 
